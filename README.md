@@ -36,17 +36,15 @@
 - [📝 License](#license)
 
 
-# 📖 [github-flow] <a name="about-project"></a>
+# 📖 [portfolio] <a name="about-project"></a>
 
-> Describe your project in 1 or 2 sentences.
 
-**[this is a demo project of portfolio]** is a...
+**[portfolio]** is a demo project of portfolio website
 
 ## 🛠 Built With <a name="built-with"></a>
 
 ### Tech Stack <a name="tech-stack"></a>
 
-> Describe the tech stack and include only the relevant sections that apply to your project.
 
 <details>
   <summary>Client</summary>
@@ -63,7 +61,6 @@
 
 ### Key Features <a name="key-features"></a>
 
-> Describe between 1-3 key features of the application.
 
 - **[demo project of portfolio website]**
 
