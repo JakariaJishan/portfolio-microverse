@@ -87,7 +87,7 @@ font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
-  color: #1C1A19;
+  color: #1c1a19;
   text-align: center;
   margin-bottom: 24px;
 }
@@ -108,7 +108,7 @@ font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .multi-post p {
@@ -117,7 +117,7 @@ font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-  color: #091E42;
+  color: #091e42;
   margin: 12px 0;
 }
 
@@ -131,8 +131,8 @@ font-family: 'Inter', sans-serif;
 
 .keywords ul li a {
   text-decoration: none;
-  background: #FFFFFF;
-  border: 1px solid #8993A4;
+  background: #fff;
+  border: 1px solid #8993a4;
   padding: 10px 12px;
   display: block;
   font-family: 'Inter';
@@ -140,7 +140,7 @@ font-family: 'Inter', sans-serif;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
-  color: #091E42;
+  color: #091e42;
 }
 
 .keywords ul li a:hover {
@@ -156,7 +156,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .multi-post button {
-  background: #FF6B00;
+  background: #ff6b00;
   padding: 12px;
   font-family: 'Inter';
   font-style: normal;
@@ -252,7 +252,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .project-foreground button {
-  background: #FF6B00;
+  background: #ff6b00;
   padding: 12px;
   font-family: 'Inter';
   font-style: normal;
@@ -269,7 +269,7 @@ font-family: 'Inter', sans-serif;
 
 /* about section */
 .about {
-  background-color: #1C1A19;
+  background-color: #1c1a19;
   padding: 24px;
   margin-top: 120px;
 }
@@ -282,10 +282,8 @@ font-family: 'Inter', sans-serif;
   line-height: 88px;
   margin-top: 120px;
   letter-spacing: 0.37px;
-  color: #FF6B00;
+  color: #ff6b00;
 }
-
-
 
 .about-header p {
   font-family: 'Inter';
@@ -293,13 +291,12 @@ font-family: 'Inter', sans-serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
-
   margin: 24px 0;
-  color: #F4F5F7;
+  color: #f4f5f7;
 }
 
 .about-header button {
-  background: #FF6B00;
+  background: #ff6b00;
   padding: 12px;
   font-family: 'Inter';
   font-style: normal;
@@ -355,7 +352,7 @@ font-family: 'Inter', sans-serif;
   display: inline-block;
   margin-right: 12px;
   transform: rotate(-45deg);
-  background-color: #FF6B00;
+  background-color: #ff6b00;
 }
 
 .frameworks h3::before {
@@ -364,7 +361,7 @@ font-family: 'Inter', sans-serif;
   width: 18px;
   display: inline-block;
   margin-right: 12px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
 }
 
 .skills h3::before {
@@ -374,5 +371,5 @@ font-family: 'Inter', sans-serif;
   border-radius: 50%;
   display: inline-block;
   margin-right: 12px;
-  background-color: #FF6B00;
+  background-color: #ff6b00;
 }
