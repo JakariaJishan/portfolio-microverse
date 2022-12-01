@@ -125,6 +125,29 @@ font-family: 'Inter', sans-serif;
   list-style: none;
 }
 
+.language ul li,
+.frameworks ul li,
+.skills ul li {
+  list-style: none;
+  margin: 32px 0;
+}
+
+.project-keyword ul li {
+  list-style: none;
+}
+
+.language ul li a,
+.skills ul li a,
+.frameworks ul li a {
+  text-decoration: none;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 43px;
+  color: white;
+}
+
 .keywords ul li:nth-child(n+1) {
   margin-right: 12px;
 }
@@ -135,12 +158,25 @@ font-family: 'Inter', sans-serif;
   border: 1px solid #8993a4;
   padding: 10px 12px;
   display: block;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 500;
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
+}
+
+.project-keyword ul li a {
+  text-decoration: none;
+  background: rgba(255, 255, 255, 0.1);
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
 }
 
 .keywords ul li a:hover {
@@ -158,7 +194,7 @@ font-family: 'Inter', sans-serif;
 .multi-post button {
   background: #ff6b00;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -218,32 +254,6 @@ font-family: 'Inter', sans-serif;
   margin: 0 16px;
 }
 
-.project-keyword ul li {
-  list-style: none;
-}
-
-.project-keyword ul li:nth-child(n+1) {
-  margin-right: 12px;
-}
-
-.project-keyword ul li a {
-  text-decoration: none;
-  background: rgba(255, 255, 255, 0.1);
-  padding: 10px 12px;
-  display: block;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-}
-
-.project-keyword ul li a:hover {
-  background-color: #ff6b00;
-  color: white;
-}
-
 .project-keyword ul {
   display: flex;
   flex-direction: row;
@@ -251,10 +261,19 @@ font-family: 'Inter', sans-serif;
   margin-bottom: 12px;
 }
 
+.project-keyword ul li:nth-child(n+1) {
+  margin-right: 12px;
+}
+
+.project-keyword ul li a:hover {
+  background-color: #ff6b00;
+  color: white;
+}
+
 .project-foreground button {
   background: #ff6b00;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -275,7 +294,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .about-header h2 {
-  font-family: 'Crete Round';
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 72px;
@@ -286,7 +305,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .about-header p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -298,7 +317,7 @@ font-family: 'Inter', sans-serif;
 .about-header button {
   background: #ff6b00;
   padding: 12px;
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 17px;
@@ -315,25 +334,6 @@ font-family: 'Inter', sans-serif;
 
 .about-language {
   text-align: center;
-}
-
-.language ul li,
-.frameworks ul li,
-.skills ul li {
-  list-style: none;
-  margin: 32px 0;
-}
-
-.language ul li a,
-.skills ul li a,
-.frameworks ul li a {
-  text-decoration: none;
-  font-family: 'Inter';
-  font-style: normal;
-  font-weight: 400;
-  font-size: 22px;
-  line-height: 43px;
-  color: white;
 }
 
 .about-language h3 {
