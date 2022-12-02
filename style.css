@@ -302,6 +302,20 @@ font-family: 'Inter', sans-serif;
 
 .about-header {
   padding: 24px;
+
+}
+
+.about-header::after {
+  content: "";
+  display: block;
+  /*missing prop*/
+  background-image: url('./images/about-me-img.png');
+  background-repeat: no-repeat;
+  position: absolute;
+  height: 245px;
+  width: 150px;
+  right: 0;
+  margin-top: -70px;
 }
 
 .about-header h2 {
@@ -346,8 +360,10 @@ font-family: 'Inter', sans-serif;
   cursor: pointer;
 }
 
+
+
 .about hr {
-  margin: 120px 24px;
+  margin: 320px 24px 120px;
 }
 
 .about-language {
