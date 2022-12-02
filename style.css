@@ -23,6 +23,7 @@ font-family: 'Inter', sans-serif;
 
 .showcase {
   background-color: #1c1a19;
+
   /* height: 590px; */
   padding: 0 24px;
   color: white;
@@ -37,6 +38,7 @@ font-family: 'Inter', sans-serif;
   justify-content: right;
   align-items: center;
   margin: -250px -24px 50px 0;
+
   /* position: absolute; */
 }
 
@@ -296,7 +298,6 @@ font-family: 'Inter', sans-serif;
 .about {
   background-color: #1c1a19;
   margin-top: 120px;
-
 }
 
 .about-header {
