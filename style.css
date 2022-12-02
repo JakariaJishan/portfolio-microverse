@@ -302,13 +302,13 @@ font-family: 'Inter', sans-serif;
 
 .about-header {
   padding: 24px;
-
 }
 
 .about-header::after {
   content: "";
   display: block;
-  /*missing prop*/
+
+  /* missing prop */
   background-image: url('./images/about-me-img.png');
   background-repeat: no-repeat;
   position: absolute;
@@ -359,8 +359,6 @@ font-family: 'Inter', sans-serif;
   color: white;
   cursor: pointer;
 }
-
-
 
 .about hr {
   margin: 320px 24px 120px;
