@@ -400,7 +400,7 @@ button {
 }
 
 form {
-  width: 400px;
+  width: 300px;
   margin: 80px auto 0;
 }
 
@@ -457,4 +457,12 @@ footer .icons {
 
 hr {
   border: 1px solid #dfe1e6;
+}
+
+.shape {
+  width: 134px;
+  height: 5px;
+  margin: 23px auto 8px;
+  background: #0d151e;
+  border-radius: 10px;
 }
