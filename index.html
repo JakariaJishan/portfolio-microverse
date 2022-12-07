@@ -322,12 +322,12 @@
         </article>
         <form novalidate action="https://formspree.io/f/xqkjrlry" method="post">
 
-            <input type="text" class="form-controll" id="full-name" maxlength="30" name="full_name"
-                placeholder="First name" required>
-            <input type="email" class="form-controll" id="email" name="user-email" placeholder="Email address"
+            <input type="text" id="full-name" maxlength="30" name="full_name" placeholder="First name" required>
+            <input type="email" id="email" name="user-email" placeholder="Email address"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
-            <textarea name="message" class="" maxlength="500" placeholder="Enter message here" required></textarea>
-            <button class="form_button" type="submit">Get in touch</button>
+            <textarea name="message" maxlength="500" placeholder="Enter message here" required></textarea>
+            <div class="errorButton , flex">
+                <button class="form_button" type="submit">Get in touch</button>
         </form>
     </section>
     <hr>
