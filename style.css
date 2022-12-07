@@ -72,7 +72,7 @@ font-family: 'Inter', sans-serif;
 }
 
 .icons img {
-  width: 20px;
+  width: 30px;
 }
 
 .icons ul {
@@ -453,6 +453,7 @@ footer .icons {
   text-align: center;
   display: flex;
   justify-content: center;
+  width: 30px;
 }
 
 hr {
