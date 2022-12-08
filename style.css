@@ -6,6 +6,11 @@
   box-sizing: border-box;
 }
 
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+}
+
 ul li {
   list-style: none;
 }
@@ -64,26 +69,33 @@ font-family: 'Inter', sans-serif;
 
 .showcase {
   background-color: #1c1a19;
+  background-image: url('./images/Illustration-header.png');
+  background-position: right bottom;
+  background-repeat: no-repeat;
+  background-size: 312px 400px;
 
-  /* height: 590px; */
+  height: 800px;
   padding: 0 24px;
   color: white;
-  position: relative;
+
+}
+
+.hero {
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: flex-start;
+  height: 737px;
+  gap: 24px;
 }
 
-.showcase-img {
+.hero-article {
   display: flex;
-  justify-content: right;
-  align-items: center;
-  margin: -250px -24px 50px 0;
-
-  /* position: absolute; */
+  flex-direction: column;
+  gap: 12px;
 }
 
-.showcase h1 {
+.hero-article h1 {
   font-family: 'Crete Round', serif;
   font-size: 56px;
   font-weight: 400;
@@ -91,20 +103,18 @@ font-family: 'Inter', sans-serif;
   letter-spacing: 0.3700000047683716px;
   text-align: left;
   color: #ff6b00;
-  padding-top: 120px;
 }
 
-.showcase h2 {
+.hero-article h2 {
   font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 24px;
   line-height: 32px;
   color: #fff5e1;
-  margin: 12px 0;
 }
 
-.showcase p {
+.hero-article p {
   font-family: 'Poppins', sans-serif;
   font-weight: 400;
   font-size: 16px;
@@ -112,44 +122,81 @@ font-family: 'Inter', sans-serif;
   margin: 12px 0;
 }
 
-.icons img {
+.icons-1st {
+  display: none;
+}
+
+.icons-1st img,
+.icons-2nd img {
   width: 30px;
 }
 
-.icons ul {
+.icons-1st ul,
+.icons-2nd ul {
   display: flex;
 }
 
-.icons ul li {
+.icons-1st ul li,
+.icons-2nd ul li {
   list-style: none;
   margin-right: 10px;
+  margin-bottom: 10px;
 }
 
 /* work section */
-.works {
-  margin: 120px 24px 0;
+.work-section {
+  padding: 120px 24px;
 }
 
-.works h2 {
-  font-family: 'Crete Round', serif;
+
+
+.recent-work {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.line-light {
+  height: 0px;
+  width: 100%;
+  border: 1px solid #212121;
+}
+
+.recent-work h2 {
+  font-family: 'Crete Round', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 40px;
   line-height: 52px;
   color: #1c1a19;
   text-align: center;
-  margin-bottom: 24px;
 }
 
 .multi-post {
-  margin-top: 80px;
+  margin: 80px 0 24px 0;
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 24px;
 }
 
 .multi-post img {
-  max-width: 400px;
-  width: 100%;
-  margin-bottom: 24px;
+  max-width: 100%;
+  width: 327px;
+  height: 237px;
 }
+
+.multi-post-content {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  align-items: flex-start;
+
+}
+
 
 .multi-post h3 {
   font-family: 'Crete Round', serif;
@@ -167,7 +214,6 @@ font-family: 'Inter', sans-serif;
   font-size: 16px;
   line-height: 24px;
   color: #091e42;
-  margin: 12px 0;
 }
 
 .keywords ul li {
@@ -259,7 +305,6 @@ button {
   display: grid;
   grid-template-columns: 1fr;
   gap: 24px;
-  margin: 0 24px;
 }
 
 .project-background {
@@ -497,9 +542,8 @@ footer .icons {
   width: 30px;
 }
 
-hr {
-  border: 1px solid #dfe1e6;
-}
+
+
 
 .shape {
   width: 134px;
@@ -511,9 +555,6 @@ hr {
 
 /* screen for- Desktop: 768px or wider */
 @media screen and (min-width: 768px) {
-  .showcase {
-    display: flex;
-  }
 
   .hamburger-menu {
     display: none;
@@ -521,6 +562,87 @@ hr {
 
   .desktop-menu {
     display: block;
+  }
+
+  /* showcase section */
+  .showcase {
+    background-size: auto;
+  }
+
+  .hero {
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    width: 566px;
+    height: 737px;
+
+  }
+
+  .hero-article {
+    width: 566px;
+  }
+
+  .hero-article h1 {
+    font-size: 72px;
+    line-height: 82px;
+  }
+
+  .hero-article h2 {
+    font-size: 32px;
+    line-height: 44px;
+  }
+
+  .hero-article p {
+    font-size: 20px;
+    line-height: 32px;
+  }
+
+  .icons-1st {
+    display: block;
+  }
+
+  .icons-1st ul {
+    flex-direction: column;
+  }
+
+  .icons-2nd {
+    display: none;
+  }
+
+  /* work section */
+  .work-section {
+    padding: 130px 161px;
+  }
+
+  .recent-work {
+    flex-direction: row;
+    justify-content: start;
+  }
+
+  .recent-work h2 {
+    color: #091E42;
+    width: 560px;
+  }
+
+  .line-light {
+    width: 100%;
+  }
+
+  .multi-post {
+    flex-direction: row;
+
+  }
+
+
+  .multi-post img {
+    width: 684px;
+    height: 448px;
+  }
+
+  /* projects */
+
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
   }
 
 
