@@ -292,7 +292,7 @@ font-family: 'Inter', sans-serif;
   margin-bottom: 12px;
 }
 
-button {
+.primary-btn {
   background: #ff6b00;
   padding: 12px;
   font-family: 'Inter', sans-serif;
@@ -313,6 +313,21 @@ button {
   gap: 24px;
 }
 
+.card-btn {
+  background: #FF6B00;
+  padding: 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 17px;
+  line-height: 24px;
+  letter-spacing: 0.03em;
+  border: none;
+  color: white;
+  cursor: pointer;
+  width: 100%;
+}
+
 .project-background {
   background: url('./images/projects-background.png');
   background-position: center;
@@ -324,31 +339,42 @@ button {
 }
 
 .project-foreground {
+  background: linear-gradient(179.35deg, rgba(38, 38, 38, 0) 0.85%, rgba(38, 38, 38, 0.9) 84%);
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  visibility: visible;
 }
 
-.project-foreground h3 {
+.projects-content {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  padding: 16px;
+  height: 386px;
+  width: 327px;
+  justify-content: flex-end;
+
+
+
+}
+
+.projects-content h3 {
   font-family: 'Crete Round', serif;
   font-style: normal;
   font-weight: 400;
   font-size: 32px;
   line-height: 44px;
   color: #fff;
-  margin: 84px 16px 0;
 }
 
-.project-foreground p {
+.projects-content p {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
   line-height: 24px;
   color: #fff;
-  margin: 12px 16px;
 }
 
 .project-keyword {
@@ -359,7 +385,7 @@ button {
   display: flex;
   flex-direction: row;
   align-items: center;
-  margin-bottom: 12px;
+  margin-bottom: 22px;
 }
 
 .project-keyword ul li:nth-child(n+1) {
@@ -615,6 +641,7 @@ footer .icons {
   .recent-work {
     flex-direction: row;
     justify-content: start;
+    gap: 0;
   }
 
   .recent-work h2 {
@@ -643,6 +670,43 @@ footer .icons {
     grid-template-columns: repeat(3, 1fr);
   }
 
+  .projects-content {
+
+    gap: 24px;
+    padding: 16px;
+  }
+
+
+  .card-btn {
+    opacity: 0;
+  }
+
+  .project-keyword {
+    position: absolute;
+    bottom: 0;
+  }
+
+  .projects-content,
+  .project-keyword {
+    opacity: 1;
+  }
+
+  .project-foreground:hover .projects-content {
+    opacity: 0;
+  }
+
+  .project-foreground:hover .project-keyword {
+    opacity: 0;
+  }
+
+  .project-foreground:hover .card-btn {
+    opacity: 1;
+  }
+
+  .project-foreground:hover {
+    background: transparent;
+  }
+
   /* about section */
   .about {
     padding: 120px 0px;
@@ -666,4 +730,5 @@ footer .icons {
     text-align: left;
     padding: 0 142px;
   }
+
 }
