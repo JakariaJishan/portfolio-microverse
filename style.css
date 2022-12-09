@@ -290,7 +290,7 @@ font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
-  transition: all 0.5s ease-in-out;
+  transition: all 0.8s ease-in-out;
 }
 
 .project-keyword ul li a {
