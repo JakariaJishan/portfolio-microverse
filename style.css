@@ -40,6 +40,31 @@ header {
   padding: 12px 24px;
 }
 
+.brand-img {
+  animation-name: slidein;
+  animation-duration: 0.9s;
+}
+
+@keyframes slidein {
+
+  0%,
+  20%,
+  50%,
+  80%,
+  100% {
+    transform: translateY(0);
+  }
+
+  40% {
+    transform: translateY(-30px);
+  }
+
+  60% {
+    transform: translateY(-15px);
+  }
+
+}
+
 header ul {
   display: flex;
   justify-content: center;
@@ -265,6 +290,7 @@ font-family: 'Inter', sans-serif;
   font-size: 15px;
   line-height: 20px;
   color: #091e42;
+  transition: all 0.5s ease-in-out;
 }
 
 .project-keyword ul li a {
