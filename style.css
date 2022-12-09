@@ -42,7 +42,7 @@ header {
 
 .brand-img {
   animation-name: slidein;
-  animation-duration: 0.9s;
+  animation-duration: 0.7s;
 }
 
 @keyframes slidein {
