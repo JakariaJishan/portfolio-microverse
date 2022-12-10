@@ -734,4 +734,25 @@ footer .icons {
     padding: 0 142px;
   }
 
+  /* form section */
+  .form-section {
+
+    flex-direction: row;
+    gap: 24px;
+    margin: 130px;
+  }
+
+  .form-article {
+    width: 40%;
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 52px;
+    text-align: left;
+    color: #262626;
+  }
+
+  form {
+    width: 60%;
+    margin-top: 0;
+  }
 }
