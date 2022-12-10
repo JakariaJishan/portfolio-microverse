@@ -16,15 +16,6 @@ ul li {
 }
 
 a {
-  /*
-  width: 59px;
-  height: 20px;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 600;
-  font-size: 15px;
-  line-height: 20px;
-  */
   color: #fff;
   text-decoration: none;
   font-family: 'Inter', sans-serif;
@@ -81,10 +72,10 @@ header ul li:hover {
 
 .showcase {
   background-color: #1c1a19;
-  background-image: url('./images/Illustration-header.png');
+  background-image: url('./images/Illustration.png');
   background-position: right bottom;
   background-repeat: no-repeat;
-  background-size: 312px 400px;
+  background-size: auto;
   height: 800px;
   padding: 0 24px;
   color: white;
@@ -183,17 +174,12 @@ header ul li:hover {
 
 .multi-post {
   margin: 80px 0 24px 0;
-  display: flex;
-  flex-direction: column;
-  justify-content: start;
-  align-items: flex-start;
+  display: grid;
   gap: 24px;
 }
 
 .multi-post img {
-  max-width: 100%;
-  width: 327px;
-  height: 237px;
+  width: 100%;
 }
 
 .multi-post-content {
@@ -317,7 +303,6 @@ header ul li:hover {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  max-width: 400px;
   width: 100%;
   position: relative;
 }
@@ -384,9 +369,9 @@ header ul li:hover {
 }
 
 .about-header {
-  background-image: url('./images/about-me-img.png');
+  background-image: url('./images/Frame.png');
   background-repeat: no-repeat;
-  background-position: 214px 330px;
+  background-position: right bottom;
   background-size: auto;
 }
 
@@ -557,7 +542,7 @@ footer .icons ul {
 }
 
 /* screen for- Desktop: 768px or wider */
-@media screen and (min-width: 1024px) {
+@media screen and (min-width: 768px) {
   .hamburger-menu {
     display: none;
   }
@@ -567,9 +552,6 @@ footer .icons ul {
   }
 
   /* showcase section */
-  .showcase {
-    background-size: auto;
-  }
 
   .hero {
     flex-direction: row;
@@ -613,9 +595,6 @@ footer .icons ul {
   }
 
   /* work section */
-  .work-section {
-    padding: 130px 161px;
-  }
 
   .recent-work {
     flex-direction: row;
@@ -633,18 +612,17 @@ footer .icons ul {
   }
 
   .multi-post {
-    flex-direction: row;
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .multi-post img {
-    width: 684px;
     height: 448px;
   }
 
   /* projects */
 
   .projects {
-    grid-template-columns: repeat(3, 1fr);
+    grid-template-columns: repeat(2, 1fr);
   }
 
   .projects-content {
@@ -692,13 +670,6 @@ footer .icons ul {
     padding: 120px 0;
   }
 
-  .about-header {
-    background-repeat: no-repeat;
-    background-position: right center;
-    background-size: auto;
-    padding: 0 142px;
-  }
-
   .about-content {
     width: 566px;
   }
@@ -735,5 +706,33 @@ footer .icons ul {
   /* footer */
   .shape {
     display: none;
+  }
+}
+
+@media screen and (min-width: 1337px) {
+  .projects {
+    grid-template-columns: repeat(3, 1fr);
+  }
+
+  .work-section {
+    padding: 130px 161px;
+  }
+
+  .about-header {
+    background-image: url('./images/about-me-img.png');
+    background-repeat: no-repeat;
+    background-position: right center;
+    background-size: auto;
+  }
+
+  .showcase {
+    background-color: #1c1a19;
+    background-image: url('./images/Illustration-header.png');
+    background-position: right bottom;
+    background-repeat: no-repeat;
+    background-size: auto;
+    height: 800px;
+    padding: 0 24px;
+    color: white;
   }
 }
