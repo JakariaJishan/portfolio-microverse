@@ -405,7 +405,7 @@ font-family: 'Inter', sans-serif;
 .about-header {
   background-image: url('./images/about-me-img.png');
   background-repeat: no-repeat;
-  background-position: 200px 220px;
+  background-position: 214px 330px;
   background-size: auto;
 }
 
@@ -558,7 +558,7 @@ textarea {
   background-color: #fbf8f7;
 }
 
-footer .icons {
+footer .icons ul {
   margin: 24px auto;
   text-align: center;
   display: flex;
@@ -566,6 +566,10 @@ footer .icons {
   width: 30px;
 }
 
+.footer-line {
+  background: #DFE1E6;
+  height: 1px;
+}
 
 
 
@@ -578,7 +582,7 @@ footer .icons {
 }
 
 /* screen for- Desktop: 768px or wider */
-@media screen and (min-width: 768px) {
+@media screen and (min-width: 1024px) {
 
   .hamburger-menu {
     display: none;
@@ -599,7 +603,7 @@ footer .icons {
     align-items: center;
     width: 566px;
     height: 737px;
-
+    gap: 80px;
   }
 
   .hero-article {
@@ -627,6 +631,7 @@ footer .icons {
 
   .icons-1st ul {
     flex-direction: column;
+    gap: 16px;
   }
 
   .icons-2nd {
@@ -754,5 +759,10 @@ footer .icons {
   form {
     width: 60%;
     margin-top: 0;
+  }
+
+  /* footer */
+  .shape {
+    display: none;
   }
 }
