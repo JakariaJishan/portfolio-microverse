@@ -671,11 +671,13 @@ footer .icons {
   }
 
   .projects-content {
-
     gap: 24px;
     padding: 16px;
   }
 
+  .projects-content p {
+    margin-bottom: 24px;
+  }
 
   .card-btn {
     opacity: 0;
@@ -705,6 +707,7 @@ footer .icons {
 
   .project-foreground:hover {
     background: transparent;
+    cursor: pointer;
   }
 
   /* about section */
