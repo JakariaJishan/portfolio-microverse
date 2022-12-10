@@ -66,7 +66,7 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](https://github.com/JakariaJishan/Portfolio/issues).
+Feel free to check the [issues page](https://github.com/JakariaJishan/portfolio-microverse/issues).
 
 ## Show your support
 
