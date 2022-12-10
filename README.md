@@ -1,114 +1,82 @@
-# portfolio-microverse
-
-<a name="readme-top"></a>
-
-<div align="center">
-
-  <h3><b>Microverse README Template</b></h3>
-
-</div>
+<!-- TABLE OF CONTENTS -->
 
 # 📗 Table of Contents
 
 - [📖 About the Project](#about-project)
-  - [🛠 Built With](#built-with)
-    - [Tech Stack](#tech-stack)
-    - [Key Features](#key-features)
-  - [🚀 Live Demo](#live-demo)
 - [💻 Getting Started](#getting-started)
-  - [Setup](#setup)
-  - [Prerequisites](#prerequisites)
-  - [Install](#install)
-  - [Usage](#usage)
-  - [Run tests](#run-tests)
-  - [Deployment](#triangular_flag_on_post-deployment)
+- [Prerequisite](#prerequisite)
+- [Usage](#usage)
+- [Setup](#setup)
+- [Run tests](#run-tests)
+- [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
-- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
-- [❓ FAQ](#faq)
 - [📝 License](#license)
 
-# 📖 [portfolio] <a name="about-project"></a>
+# Portfolio
 
-**[portfolio]** is a demo project of portfolio website
+> This is a simple replica of the template (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0) for portfolio setup.
 
-## 🛠 Built With <a name="built-with"></a>
+Live Link
+In Progress
 
-### Tech Stack <a name="tech-stack"></a>
+## Built With
 
-<details>
-  <summary>Client</summary>
-  <ul>
-    <li><a href="#">html</a></li>
-    <li><a href="#">css</a></li>
-  </ul>
-</details>
+- HTML, CSS
+- VSCode
 
-### Key Features <a name="key-features"></a>
+## Getting Started
 
-- **[demo project of portfolio website]**
+Clone this repository to get started with the project, make sure to configure linters by following the instructions in the Linters README file (https://github.com/microverseinc/linters-config/blob/master/README.md)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### prerequisite
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- A web browser (like Google Chrome, Opera...)
+- A code editor.
 
-## 💻 Getting Started <a name="getting-started"></a>
+### usage
 
-```sh
-  cd my-folder
-  git clone git@github.com:JakariaJishan/portfolio-microverse.git
-```
+cd https://github.com/JakariaJishan/portfolio-microverse
+code . ## To open code in VS Code
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+### Setup
 
-## 👥 Authors <a name="authors"></a>
+-Clone the folder to your local machine.
+-Open the index.html file in your brower.
 
-👤 **jakaria**
+### Run tests
+
+After pushing the changes on github, merge your pull request and let github action process changes.
+
+### Deployment
+
+Check for the tests when you generate a pull request and fix errors, if any.
+For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code> for automatic fix.
+
+## Authors
+
+👤 **Jakaria Jishan**
 
 - GitHub: [@githubhandle](https://github.com/JakariaJishan)
+- Twitter: [@twitterhandle](https://twitter.com/jakaria_jishan)
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 🤝 Contributing <a name="contributing"></a>
+## 🤝 Contributing
 
 Contributions, issues, and feature requests are welcome!
 
-Feel free to check the [issues page](../../issues/).
+Feel free to check the [issues page](https://github.com/ashmalzahra/Portfolio/issues).
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+## Show your support
 
-## ⭐️ Show your support <a name="support"></a>
+Give a ⭐️ if you like this project!
 
-If you like this project then you can clone this project.
+## Acknowledgments
 
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+- https://css-tricks.com/snippets/css/a-guide-to-flexbox/
+- https://www.w3schools.com/css/css_grid.asp
 
-## 🙏 Acknowledgments <a name="acknowledgements"></a>
+## 📝 License
 
-I would like to thank microverse
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## ❓ FAQ <a name="faq"></a>
-
-- **[from where you get idea to do this project]**
-
-  - [this is a microverse demo project. Every microverse student have to do this. ]
-
-- **[is it ok if anyone wants to clone this repository]**
-
-  - [yeah, sure. it is absolutely ok. also you can make this better version.]
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-## 📝 License <a name="license"></a>
-
-This project is [MIT](https://choosealicense.com/licenses/mit/) licensed.
-
-_NOTE: we recommend using the [MIT license](https://choosealicense.com/licenses/mit/) - you can set it up quickly by [using templates available on GitHub](https://docs.github.com/en/communities/setting-up-your-project-for-healthy-contributions/adding-a-license-to-a-repository). You can also use [any other license](https://choosealicense.com/licenses/) if you wish._
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
+This project is [MIT](https://github.com/microverseinc/readme-template/blob/master/MIT.md) licensed.
