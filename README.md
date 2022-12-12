@@ -19,8 +19,7 @@
 
 > This is a simple replica of the template (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0) for portfolio setup.
 
-Live Link
-In Progress
+Live Link 👉 https://jakariajishan.github.io/portfolio-microverse/
 
 ## Built With
 
@@ -70,7 +69,7 @@ Feel free to check the [issues page](https://github.com/JakariaJishan/portfolio-
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a (star)⭐️ if you like this project!
 
 ## Acknowledgments
 
