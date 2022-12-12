@@ -70,7 +70,7 @@ Feel free to check the [issues page](https://github.com/JakariaJishan/portfolio-
 
 ## Show your support
 
-Give a ⭐️ if you like this project!
+Give a (star)⭐️ if you like this project!
 
 ## Acknowledgments
 
