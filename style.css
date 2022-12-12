@@ -36,7 +36,6 @@ header {
 }
 
 @keyframes slidein {
-
   0%,
   20%,
   50%,
@@ -52,7 +51,6 @@ header {
   60% {
     transform: translateY(-15px);
   }
-
 }
 
 header ul {
