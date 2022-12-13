@@ -312,6 +312,11 @@ header ul li:hover {
   color: #f55800;
 }
 
+.primary-btn:active {
+  background: #e05304;
+  color: #f4f1f0;
+}
+
 .projects {
   display: grid;
   grid-template-columns: 1fr;
