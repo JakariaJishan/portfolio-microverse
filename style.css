@@ -30,6 +30,10 @@ header {
   padding: 12px 24px;
 }
 
+label {
+  display: none;
+}
+
 .brand-img {
   animation-name: slidein;
   animation-duration: 0.7s;
@@ -292,13 +296,25 @@ header ul li:hover {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: none;
+  border: 1px solid transparent;
   color: white;
   cursor: pointer;
   margin-bottom: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.primary-btn:hover {
+  background: #fff5e1;
+  border: 1px solid #f55800;
+  color: #f55800;
+}
+
+.primary-btn:active {
+  background: #e05304;
+  color: #f4f1f0;
 }
 
 .projects {
@@ -313,13 +329,20 @@ header ul li:hover {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
   border: none;
   color: white;
   cursor: pointer;
   width: 100%;
+  z-index: 10;
+  transition: all 0.5s ease-in-out;
+}
+
+.card-btn:hover {
+  background: #fff5e1;
+  color: #f55800;
 }
 
 .project-background {
@@ -411,16 +434,6 @@ header ul li:hover {
   line-height: 88px;
   letter-spacing: 0.37px;
   color: #ff6b00;
-}
-
-.about-content p {
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 400;
-  font-size: 16px;
-  line-height: 24px;
-  margin: 24px 0;
-  color: #f4f5f7;
 }
 
 .about-language {
@@ -631,6 +644,34 @@ footer .icons ul {
     width: 560px;
   }
 
+  .multi-post p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .projects-content p {
+    margin-bottom: 24px;
+  }
+
+  .about-content p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 24px 0;
+    color: #f4f5f7;
+  }
+
+  .multi-post p:hover {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   .line-light {
     width: 100%;
   }
@@ -652,10 +693,6 @@ footer .icons ul {
   .projects-content {
     gap: 24px;
     padding: 16px;
-  }
-
-  .projects-content p {
-    margin-bottom: 24px;
   }
 
   .card-btn {
@@ -696,6 +733,11 @@ footer .icons ul {
 
   .about-content {
     width: 566px;
+  }
+
+  .about-content p:hover {
+    font-size: 32px;
+    line-height: 40px;
   }
 
   .about-language {
@@ -747,6 +789,7 @@ footer .icons ul {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto;
+    padding: 140px;
   }
 
   .showcase {
