@@ -40,6 +40,7 @@ label {
 }
 
 @keyframes slidein {
+
   0%,
   20%,
   50%,
@@ -296,13 +297,20 @@ header ul li:hover {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
-  border: none;
+  border: 1px solid transparent;
   color: white;
   cursor: pointer;
   margin-bottom: 24px;
+  transition: all 0.5s ease-in-out;
+}
+
+.primary-btn:hover {
+  background: #FFF5E1;
+  border: 1px solid #F55800;
+  color: #F55800;
 }
 
 .projects {
@@ -317,13 +325,14 @@ header ul li:hover {
   font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 700;
-  font-size: 17px;
+  font-size: 20px;
   line-height: 24px;
   letter-spacing: 0.03em;
   border: none;
   color: white;
   cursor: pointer;
   width: 100%;
+  z-index: 10;
 }
 
 .project-background {
@@ -635,6 +644,20 @@ footer .icons ul {
     width: 560px;
   }
 
+  .multi-post p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 28px;
+    color: #091e42;
+  }
+
+  .multi-post p:hover {
+    font-size: 28px;
+    line-height: 32px;
+  }
+
   .line-light {
     width: 100%;
   }
@@ -702,6 +725,21 @@ footer .icons ul {
     width: 566px;
   }
 
+  .about-content p {
+    font-family: 'Inter', sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 32px;
+    margin: 24px 0;
+    color: #f4f5f7;
+  }
+
+  .about-content p:hover {
+    font-size: 32px;
+    line-height: 40px;
+  }
+
   .about-language {
     flex-direction: row;
     justify-content: space-between;
@@ -751,6 +789,7 @@ footer .icons ul {
     background-repeat: no-repeat;
     background-position: right center;
     background-size: auto;
+    padding: 140px;
   }
 
   .showcase {
