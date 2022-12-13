@@ -30,12 +30,17 @@ header {
   padding: 12px 24px;
 }
 
+label {
+  display: none;
+}
+
 .brand-img {
   animation-name: slidein;
   animation-duration: 0.7s;
 }
 
 @keyframes slidein {
+
   0%,
   20%,
   50%,
