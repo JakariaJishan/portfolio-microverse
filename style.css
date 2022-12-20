@@ -41,6 +41,7 @@ label {
 }
 
 @keyframes slidein {
+
   0%,
   20%,
   50%,
@@ -384,6 +385,119 @@ header ul li:hover {
   color: #f55800;
 }
 
+.popup-content {
+  display: block;
+  background-color: white;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 90%;
+  height: 90%;
+  z-index: 80;
+  padding: 16px;
+}
+
+.popup-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.popup-header h2 {
+  font-family: 'Roboto';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 32px;
+  line-height: 44px;
+  color: #172B4D;
+}
+
+.popup-header .cancle {
+  background-color: transparent;
+  border: none;
+}
+
+.popup-content ul {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 40px 0;
+}
+
+.popup-content ul li {
+  margin-right: 10px;
+}
+
+.popup-content ul li a {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  transition: all 0.8s ease-in-out;
+}
+
+.popup-content ul li a:hover {
+  background-color: #ff6b00;
+  color: white;
+}
+
+.popup-footer {
+  display: flex;
+  flex-direction: column;
+
+}
+
+.popup-footer img {
+  max-width: 100%;
+  height: auto;
+}
+
+.footer-content p {
+  font-family: 'Inter';
+  font-style: normal;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 24px;
+  color: #344563;
+  margin: 24px 0;
+}
+
+.popup-btn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 24px;
+}
+
+.popup-btn button {
+  border: none;
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: #FF6B00;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+
 .project-background {
   background: url('./images/projects-background.png');
   background-position: center;
@@ -698,6 +812,34 @@ footer .icons ul {
 
   .projects-content p {
     margin-bottom: 24px;
+  }
+
+
+  .popup-footer {
+    display: flex;
+    flex-direction: row;
+    justify-content: start;
+    align-items: flex-start;
+    gap: 24px;
+  }
+
+  .footer-content {
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: flex-start;
+    height: 100%;
+  }
+
+  .footer-content p {
+    margin: 0;
+  }
+
+
+
+  .popup-btn {
+    justify-content: start;
+    align-items: flex-end;
   }
 
   .about-content p {
