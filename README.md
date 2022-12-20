@@ -10,6 +10,8 @@
 - [Run tests](#run-tests)
 - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
+- [😎 Key Features](#key-features)
+- [🔭 Future Features](#future-features)
 - [🤝 Contributing](#contributing)
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
@@ -62,6 +64,19 @@ For stylelint errors run:<code>sudo npx stylelint "\*_/_.{css,scss}" --fix</code
 
 - GitHub: [@githubhandle](https://github.com/JakariaJishan)
 - Twitter: [@twitterhandle](https://twitter.com/jakaria_jishan)
+
+## 😎 Key Features <a name="key-features"></a>
+
+- [ ] **Fully mobile responsive**
+- [ ] **Contact form for future work**
+- [ ] **Nice UI design**
+- [ ] **Very fast and design portfolio**
+
+## 🔭 Future Features <a name="future-features"></a>
+
+- [ ] **I will add popup for project viewing**
+- [ ] **I will validate contact form**
+- [ ] **I will preserve data in the browser**
 
 ## 🤝 Contributing
 

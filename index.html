@@ -15,27 +15,45 @@
             <a href="#">
                 <img class="brand-img" src="./images/Brand-logo.png" alt="brand logo" />
             </a>
-            <ul>
+            <ul class="desktop-menu">
                 <li class="hamburger-menu">
-                    <a href="#"> <img src="./images/Icon - Menu.png" alt="hamburger menu" /></a>
+                    <a href="#"><img src="./images/Icon - Menu.png" alt="hamburger menu" /></a>
                 </li>
-                <li class="desktop-menu">
+
+                <li class="desktop-item">
                     <a href="#">Portfolio</a>
                 </li>
-                <li class="desktop-menu">
+                <li class="desktop-item">
                     <a href="#">About</a>
                 </li>
-                <li class="desktop-menu">
+                <li class="desktop-item">
                     <a href="#">Contact</a>
                 </li>
-                <li class="desktop-menu">
+                <li class="desktop-item">
                     <a href="#"> <img class="mail-icon" src="./images/Icon - Mail.png" alt="mail icon" /></a>
                 </li>
+
             </ul>
 
+            <div class="mobile-menu">
+                <button class="cross-btn"><img src="./images/Icon - Cancel.png" alt="cross menu" /></button>
+                <ul>
+                    <li class="mobile-item">
+                        <a href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="#about">About</a>
+                    </li>
+                    <li class="mobile-item">
+                        <a href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+
         </header>
+
     </nav>
-    <section class="showcase">
+    <section id="portfolio" class="showcase">
         <div class="hero">
             <div class="icons-1st">
                 <ul>
@@ -311,7 +329,8 @@
 
         </div>
     </section>
-    <section>
+    <!-- about -->
+    <section id="about">
         <div class="about">
             <div class="about-header">
                 <div class="about-content">
@@ -393,7 +412,7 @@
         </div>
     </section>
     <!-- form section -->
-    <section class="form-section">
+    <section id="contact" class="form-section">
         <article class="form-article">
             I'm always interested in hearing about new projects, so if you'd like to chat please get in touch.
         </article>
@@ -401,10 +420,10 @@
             <label for="full-name">Fullname</label>
             <input type="text" id="full-name" class="form-controll" maxlength="30" name="full_name"
                 placeholder="First name" required>
-                <label for="email">Email</label>
+            <label for="email">Email</label>
             <input type="email" id="email" class="form-controll" name="user-email" placeholder="Email address"
                 pattern="[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,}$" required />
-                <label for="message">Message</label>
+            <label for="message">Message</label>
             <textarea id="message" name="message" maxlength="500" rows="3" cols="20" placeholder="Enter message here"
                 required></textarea>
             <button class="primary-btn" type="submit">Get in touch</button>
@@ -444,6 +463,9 @@
 
         </div>
     </footer>
+
+    <script src="./script.js"></script>
+
 </body>
 
 </html>
