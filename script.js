@@ -28,7 +28,8 @@ let workproject = {
   liveLink: "#",
   sourceLink: "#",
 };
-document.querySelector(".works").innerHTML += `<div class="recent-work">
+const works = document.querySelector(".works")
+works.innerHTML += `<div class="recent-work">
 <h2>${workproject.name}</h2>
 <div class="line-light"></div>
 </div>
