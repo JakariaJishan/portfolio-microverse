@@ -41,7 +41,6 @@ label {
 }
 
 @keyframes slidein {
-
   0%,
   20%,
   50%,
@@ -63,6 +62,26 @@ label {
   display: flex;
   justify-content: center;
   align-items: center;
+}
+
+.popup-btn a {
+  border: none;
+  padding: 10px 12px;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #fff;
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+  background: #ff6b00;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
 }
 
 header ul li {
@@ -91,6 +110,35 @@ header ul li {
   margin-bottom: 10px;
 }
 
+.popup-content ul li {
+  margin-right: 10px;
+}
+
+.mobile-item a {
+  display: block;
+  font-size: 32px;
+  line-height: 44px;
+  color: #fff5e1;
+  margin-top: 24px;
+  padding: 15px;
+  font-weight: 700;
+}
+
+.popup-content ul li a {
+  text-decoration: none;
+  background: #fff;
+  border: 1px solid #8993a4;
+  padding: 10px 12px;
+  display: block;
+  font-family: 'Inter', sans-serif;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 15px;
+  line-height: 20px;
+  color: #091e42;
+  transition: all 0.8s ease-in-out;
+}
+
 header ul li:hover {
   text-decoration: underline;
 }
@@ -116,16 +164,6 @@ header ul li:hover {
   border: none;
   display: block;
   float: right;
-}
-
-.mobile-item a {
-  display: block;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff5e1;
-  margin-top: 24px;
-  padding: 15px;
-  font-weight: 700;
 }
 
 .mobile-item::after {
@@ -396,7 +434,7 @@ header ul li:hover {
   z-index: 80;
   backdrop-filter: blur(5px);
   background-color: black;
-  background-color: rgba(0, 0, 0, 0.5)
+  background-color: rgba(0, 0, 0, 0.5);
 }
 
 .popup-content {
@@ -417,12 +455,12 @@ header ul li:hover {
 }
 
 .popup-header h2 {
-  font-family: 'Roboto';
+  font-family: 'Roboto', sans-serif;
   font-style: normal;
   font-weight: 700;
   font-size: 32px;
   line-height: 44px;
-  color: #172B4D;
+  color: #172b4d;
 }
 
 .popup-header .cancle {
@@ -435,25 +473,6 @@ header ul li:hover {
   flex-direction: row;
   align-items: center;
   margin: 40px 0;
-}
-
-.popup-content ul li {
-  margin-right: 10px;
-}
-
-.popup-content ul li a {
-  text-decoration: none;
-  background: #fff;
-  border: 1px solid #8993a4;
-  padding: 10px 12px;
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #091e42;
-  transition: all 0.8s ease-in-out;
 }
 
 .popup-content ul li a:hover {
@@ -472,7 +491,7 @@ header ul li:hover {
 }
 
 .footer-content p {
-  font-family: 'Inter';
+  font-family: 'Inter', sans-serif;
   font-style: normal;
   font-weight: 400;
   font-size: 16px;
@@ -486,27 +505,6 @@ header ul li:hover {
   justify-content: center;
   align-items: center;
   gap: 24px;
-}
-
-.popup-btn a {
-  border: none;
-  padding: 10px 12px;
-  display: block;
-  font-family: 'Inter', sans-serif;
-  font-style: normal;
-  font-weight: 500;
-  font-size: 15px;
-  line-height: 20px;
-  color: #fff;
-  border-radius: 4px;
-  outline: none;
-  cursor: pointer;
-  background: #FF6B00;
-  display: flex;
-  flex-direction: row;
-  justify-content: center;
-  align-items: center;
-  gap: 10px;
 }
 
 .project-background {

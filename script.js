@@ -1,34 +1,34 @@
-const hamburger = document.querySelector(".hamburger-menu");
-const mobileMenu = document.querySelector(".mobile-menu");
-const crossBtn = document.querySelector(".cross-btn");
-const mobileItems = document.querySelectorAll(".mobile-item");
+const hamburger = document.querySelector('.hamburger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const crossBtn = document.querySelector('.cross-btn');
+const mobileItems = document.querySelectorAll('.mobile-item');
 
-hamburger.addEventListener("click", () => {
-  mobileMenu.style.display = "block";
+hamburger.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
 });
 
-crossBtn.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
+crossBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
 });
 
 for (let i = 0; i < mobileItems.length; i += 1) {
   const element = mobileItems[i];
-  element.addEventListener("click", () => {
-    mobileMenu.style.display = "none";
+  element.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
   });
 }
 
 // projects-recent work
-let workproject = {
+const workproject = {
   id: '_1',
-  name: "Multi-Post Stories",
+  name: 'Multi-Post Stories',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-  featuredImg: "./images/works.png",
-  technologies: ["html","css", "bootstrap", "ruby"],
-  liveLink: "#",
-  sourceLink: "#",
+  featuredImg: './images/works.png',
+  technologies: ['html', 'css', 'bootstrap', 'ruby'],
+  liveLink: '#',
+  sourceLink: '#',
 };
-const works = document.querySelector(".works")
+const works = document.querySelector('.works');
 works.innerHTML += `<div class="recent-work">
 <h2>${workproject.name}</h2>
 <div class="line-light"></div>
@@ -60,75 +60,67 @@ works.innerHTML += `<div class="recent-work">
 </div>
 </div>`;
 
-const primarybtn = document.querySelector('.primary-btn')
-primarybtn.addEventListener('click', ()=>{
-  let popup = document.querySelector(".popup");
-  popup.style.display = "block";
-  popup.innerHTML = ''
-  getPopupId(workproject.id)
-})
-
 // projects...
-let projectsArr = [
+const projectsArr = [
   {
-    id: "_1",
-    name: "Profesional Art Printing Data",
+    id: '_1',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_2",
-    name: "Profesional Art Printing Data2",
+    id: '_2',
+    name: 'Profesional Art Printing Data2',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/projects-2.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/projects-2.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_3",
-    name: "Keeping track of hundreds  of components website",
+    id: '_3',
+    name: 'Keeping track of hundreds  of components website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_4",
-    name: "Profesional Art Printing Data",
+    id: '_4',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_5",
-    name: "Keeping track of hundreds  of components website",
+    id: '_5',
+    name: 'Keeping track of hundreds  of components website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_6",
-    name: "Profesional Art Printing Data",
+    id: '_6',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
-for (let i = 0; i < projectsArr.length; i++) {
+for (let i = 0; i < projectsArr.length; i += 1) {
   const element = projectsArr[i];
-  let projects = document.getElementById("projects");
+  const projects = document.getElementById('projects');
   projects.innerHTML += `<div class="project-background">
   <div class="project-foreground">
       <div class="projects-content" id="project-content">
@@ -155,23 +147,12 @@ for (let i = 0; i < projectsArr.length; i++) {
 </div>`;
 }
 
-for (let i = 0; i < projectsArr.length; i++) {
-  let cardBtn = document.querySelector("#card" + projectsArr[i].id);
-  cardBtn.addEventListener("click", () => {
-    let popup = document.querySelector(".popup");
-    popup.style.display = "block";
-    popup.innerHTML = "";
-    getPopupId(projectsArr[i].id);
-  });
-}
-
 // popup window
 
 function getPopupId(id) {
-  console.log(id);
-  for (let j = 0; j < projectsArr.length; j++) {
+  for (let j = 0; j < projectsArr.length; j += 1) {
     if (projectsArr[j].id === id) {
-      let popupWindow = document.getElementById("popup");
+      const popupWindow = document.getElementById('popup');
       popupWindow.innerHTML += `<div class="popup-content">
           <div class="popup-header">
               <h2>${projectsArr[j].name}</h2>
@@ -202,10 +183,27 @@ function getPopupId(id) {
           </div>`;
     }
   }
-  let canclex = document.querySelector("#cancle" + id);
-  canclex.addEventListener("click", () => {
-    let popup = document.querySelector(".popup");
-    popup.style.display = "none";
-    console.log("cancle");
+  const canclex = document.querySelector(`#cancle${id}`);
+  canclex.addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'none';
+  });
+}
+
+const primarybtn = document.querySelector('.primary-btn');
+primarybtn.addEventListener('click', () => {
+  const popup = document.querySelector('.popup');
+  popup.style.display = 'block';
+  popup.innerHTML = '';
+  getPopupId(workproject.id);
+});
+
+for (let i = 0; i < projectsArr.length; i += 1) {
+  const cardBtn = document.querySelector(`#card${projectsArr[i].id}`);
+  cardBtn.addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'block';
+    popup.innerHTML = '';
+    getPopupId(projectsArr[i].id);
   });
 }
