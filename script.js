@@ -222,6 +222,6 @@ form.addEventListener("submit", (e) => {
   if (!regex.test(email)) {
     formErrorMsg.innerHTML = "Email must be in lowercase";
   }else{
-    formErrorMsg.innerHTML = "success"
+    formErrorMsg.innerHTML = "Email address is correct!"
   }
 });
