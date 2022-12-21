@@ -220,7 +220,7 @@ form.addEventListener("submit", (e) => {
   const formErrorMsg = document.querySelector(".form-error-msg");
   console.log(email)
   if (!regex.test(email)) {
-    formErrorMsg.innerHTML = "error";
+    formErrorMsg.innerHTML = "Email must be in lowercase";
   }else{
     formErrorMsg.innerHTML = "success"
   }
