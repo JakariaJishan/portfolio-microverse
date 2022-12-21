@@ -207,3 +207,20 @@ for (let i = 0; i < projectsArr.length; i += 1) {
     getPopupId(projectsArr[i].id);
   });
 }
+
+// form validation
+
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
+  e.preventDefault();
+  const email = document.getElementById('email').value;
+
+  const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
+
+  const formErrorMsg = document.querySelector('.form-error-msg');
+  if (!regex.test(email)) {
+    formErrorMsg.innerHTML = 'error';
+  } else {
+    formErrorMsg.innerHTML = 'success';
+  }
+});
