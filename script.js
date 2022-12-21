@@ -219,8 +219,8 @@ form.addEventListener('submit', (e) => {
 
   const formErrorMsg = document.querySelector('.form-error-msg');
   if (!regex.test(email)) {
-    formErrorMsg.innerHTML = 'error';
-  } else {
-    formErrorMsg.innerHTML = 'success';
+    formErrorMsg.innerHTML = "error";
+  }else{
+    formErrorMsg.innerHTML = "success"
   }
 });
