@@ -59,7 +59,8 @@ document.querySelector(".works").innerHTML += `<div class="recent-work">
 </div>
 </div>`;
 
-document.querySelector('.primary-btn').addEventListener('click', ()=>{
+const primarybtn = document.querySelector('.primary-btn')
+primarybtn.addEventListener('click', ()=>{
   let popup = document.querySelector(".popup");
   popup.style.display = "block";
   popup.innerHTML = ''
