@@ -170,7 +170,7 @@ function getPopupId(id) {
               </li>
           </ul>
           <div class="popup-footer">
-              <img class="popup-img" src="${projectsArr[j].featuredImg}" alt="">
+          <img class="popup-img" src="${projectsArr[j].featuredImg}" alt="feature image">
               <div class="footer-content">
                   <p>${projectsArr[j].desc}</p>
                   <div class="popup-btn">

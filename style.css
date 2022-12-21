@@ -7,7 +7,7 @@
 }
 
 body {
-  /* max-width: 1440px; */
+  max-width: 1440px;
   margin: 0 auto;
 }
 
@@ -111,7 +111,7 @@ header ul li {
 }
 
 .popup-content ul li {
-  margin-right: 10px;
+  margin-right: 8px;
 }
 
 .mobile-item a {
@@ -425,10 +425,13 @@ header ul li:hover {
 
 .popup {
   /* background: black; */
+  max-width: 1440px;
   width: 100vw;
   height: 100vh;
   position: fixed;
-  top: 0;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   filter: blur(0.5);
   display: none;
   z-index: 80;
@@ -443,7 +446,7 @@ header ul li:hover {
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
-  width: 90%;
+  width: 85%;
   padding: 16px;
   overflow-y: auto;
 }
@@ -502,9 +505,9 @@ header ul li:hover {
 
 .popup-btn {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
-  gap: 24px;
+  gap: 19px;
 }
 
 .project-background {
@@ -829,8 +832,7 @@ footer .icons ul {
   }
 
   .popup-footer {
-    grid-template-columns: 1fr 1fr;
-    gap: 24px;
+    grid-template-columns: 60% 40%;
   }
 
   .footer-content {
@@ -838,6 +840,7 @@ footer .icons ul {
     justify-content: flex-start;
     flex-direction: column;
     align-items: flex-start;
+    padding: 0 24px;
   }
 
   .footer-content p {
@@ -849,10 +852,15 @@ footer .icons ul {
     padding: 24px;
   }
 
+  .popup-content ul {
+    margin-top: 12px;
+  }
+
   .popup-btn {
     justify-content: start;
     align-items: flex-end;
     height: 100%;
+    gap: 7px;
   }
 
   .about-content p {
