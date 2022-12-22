@@ -211,7 +211,7 @@ for (let i = 0; i < projectsArr.length; i += 1) {
 // form validation
 
 const form = document.getElementById('contact-form');
-form.addEventListener('submit', (e) => {
+form.addEventListener('change', (e) => {
   e.preventDefault();
   const email = document.getElementById('email').value;
 
