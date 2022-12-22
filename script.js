@@ -224,7 +224,8 @@ form.addEventListener('submit', (e) => {
     formErrorMsg.innerHTML = 'success';
   }
 });
-form.addEventListener('change', () => {
+
+form.addEventListener('keyup', (e) => {
   // preserve data to the local storage
 
   const fullName = document.getElementById('full-name').value;
