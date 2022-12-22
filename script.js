@@ -232,7 +232,7 @@ form.addEventListener("submit", (e) => {
       email,
       message,
     };
-    
+    localStorage.setItem("data", JSON.stringify(dataStorage));
   }
 });
 
