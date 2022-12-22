@@ -1,34 +1,34 @@
-const hamburger = document.querySelector(".hamburger-menu");
-const mobileMenu = document.querySelector(".mobile-menu");
-const crossBtn = document.querySelector(".cross-btn");
-const mobileItems = document.querySelectorAll(".mobile-item");
+const hamburger = document.querySelector('.hamburger-menu');
+const mobileMenu = document.querySelector('.mobile-menu');
+const crossBtn = document.querySelector('.cross-btn');
+const mobileItems = document.querySelectorAll('.mobile-item');
 
-hamburger.addEventListener("click", () => {
-  mobileMenu.style.display = "block";
+hamburger.addEventListener('click', () => {
+  mobileMenu.style.display = 'block';
 });
 
-crossBtn.addEventListener("click", () => {
-  mobileMenu.style.display = "none";
+crossBtn.addEventListener('click', () => {
+  mobileMenu.style.display = 'none';
 });
 
 for (let i = 0; i < mobileItems.length; i += 1) {
   const element = mobileItems[i];
-  element.addEventListener("click", () => {
-    mobileMenu.style.display = "none";
+  element.addEventListener('click', () => {
+    mobileMenu.style.display = 'none';
   });
 }
 
 // projects-recent work
 const workproject = {
-  id: "_1",
-  name: "Multi-Post Stories",
+  id: '_1',
+  name: 'Multi-Post Stories',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-  featuredImg: "./images/works.png",
-  technologies: ["html", "css", "bootstrap", "ruby"],
-  liveLink: "#",
-  sourceLink: "#",
+  featuredImg: './images/works.png',
+  technologies: ['html', 'css', 'bootstrap', 'ruby'],
+  liveLink: '#',
+  sourceLink: '#',
 };
-const works = document.querySelector(".works");
+const works = document.querySelector('.works');
 works.innerHTML += `<div class="recent-work">
 <h2>${workproject.name}</h2>
 <div class="line-light"></div>
@@ -63,64 +63,64 @@ works.innerHTML += `<div class="recent-work">
 // projects...
 const projectsArr = [
   {
-    id: "_1",
-    name: "Profesional Art Printing Data",
+    id: '_1',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_2",
-    name: "Profesional Art Printing Data2",
+    id: '_2',
+    name: 'Profesional Art Printing Data2',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/projects-2.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/projects-2.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_3",
-    name: "Keeping track of hundreds  of components website",
+    id: '_3',
+    name: 'Keeping track of hundreds  of components website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_4",
-    name: "Profesional Art Printing Data",
+    id: '_4',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_5",
-    name: "Keeping track of hundreds  of components website",
+    id: '_5',
+    name: 'Keeping track of hundreds  of components website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
   {
-    id: "_6",
-    name: "Profesional Art Printing Data",
+    id: '_6',
+    name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: "images/works.png",
-    technologies: ["html", "bootstrap", "ruby"],
-    liveLink: "#",
-    sourceLink: "#",
+    featuredImg: 'images/works.png',
+    technologies: ['html', 'bootstrap', 'ruby'],
+    liveLink: '#',
+    sourceLink: '#',
   },
 ];
 
 for (let i = 0; i < projectsArr.length; i += 1) {
   const element = projectsArr[i];
-  const projects = document.getElementById("projects");
+  const projects = document.getElementById('projects');
   projects.innerHTML += `<div class="project-background">
   <div class="project-foreground">
       <div class="projects-content" id="project-content">
@@ -152,7 +152,7 @@ for (let i = 0; i < projectsArr.length; i += 1) {
 function getPopupId(id) {
   for (let j = 0; j < projectsArr.length; j += 1) {
     if (projectsArr[j].id === id) {
-      const popupWindow = document.getElementById("popup");
+      const popupWindow = document.getElementById('popup');
       popupWindow.innerHTML += `<div class="popup-content">
           <div class="popup-header">
               <h2>${projectsArr[j].name}</h2>
@@ -184,63 +184,63 @@ function getPopupId(id) {
     }
   }
   const canclex = document.querySelector(`#cancle${id}`);
-  canclex.addEventListener("click", () => {
-    const popup = document.querySelector(".popup");
-    popup.style.display = "none";
+  canclex.addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'none';
   });
 }
 
-const primarybtn = document.querySelector(".primary-btn");
-primarybtn.addEventListener("click", () => {
-  const popup = document.querySelector(".popup");
-  popup.style.display = "block";
-  popup.innerHTML = "";
+const primarybtn = document.querySelector('.primary-btn');
+primarybtn.addEventListener('click', () => {
+  const popup = document.querySelector('.popup');
+  popup.style.display = 'block';
+  popup.innerHTML = '';
   getPopupId(workproject.id);
 });
 
 for (let i = 0; i < projectsArr.length; i += 1) {
   const cardBtn = document.querySelector(`#card${projectsArr[i].id}`);
-  cardBtn.addEventListener("click", () => {
-    const popup = document.querySelector(".popup");
-    popup.style.display = "block";
-    popup.innerHTML = "";
+  cardBtn.addEventListener('click', () => {
+    const popup = document.querySelector('.popup');
+    popup.style.display = 'block';
+    popup.innerHTML = '';
     getPopupId(projectsArr[i].id);
   });
 }
 
 // form validation
 
-const form = document.getElementById("contact-form");
-form.addEventListener("submit", (e) => {
+const form = document.getElementById('contact-form');
+form.addEventListener('submit', (e) => {
   e.preventDefault();
-  const email = document.getElementById("email").value;
+  const email = document.getElementById('email').value;
 
   const regex = /^[a-z0-9._%+-]+@[a-z0-9.-]+\.[a-z]{2,4}$/;
 
-  const formErrorMsg = document.querySelector(".form-error-msg");
+  const formErrorMsg = document.querySelector('.form-error-msg');
   if (!regex.test(email)) {
-    formErrorMsg.innerHTML = "error";
+    formErrorMsg.innerHTML = 'error';
   } else {
-    formErrorMsg.innerHTML = "success";
+    formErrorMsg.innerHTML = 'success';
   }
 });
-form.addEventListener("change", () => {
+form.addEventListener('change', () => {
   // preserve data to the local storage
 
-  const fullName = document.getElementById("full-name").value;
-  const email = document.getElementById("email").value;
-  const message = document.getElementById("message").value;
+  const fullName = document.getElementById('full-name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
   const dataStorage = {
     fullName,
     email,
     message,
   };
-  localStorage.setItem("data", JSON.stringify(dataStorage));
+  localStorage.setItem('data', JSON.stringify(dataStorage));
 });
-const data = JSON.parse(localStorage.getItem("data"));
-const email = document.getElementById("email");
+const data = JSON.parse(localStorage.getItem('data'));
+const email = document.getElementById('email');
 email.value = data.email;
-const fullName = document.getElementById("full-name");
+const fullName = document.getElementById('full-name');
 fullName.value = data.fullName;
-const message = document.getElementById("message");
+const message = document.getElementById('message');
 message.value = data.message;
