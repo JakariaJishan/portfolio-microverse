@@ -235,6 +235,10 @@ form.addEventListener("submit", (e) => {
     localStorage.setItem("data", JSON.stringify(dataStorage));
   }
 });
+let data = JSON.parse(localStorage.getItem("data"));
+const email = document.getElementById("email").value = data.email;
+const fullName = document.getElementById("full-name").value=data.fullName;
+const message = document.getElementById("message").value=data.message;
 
 
 
