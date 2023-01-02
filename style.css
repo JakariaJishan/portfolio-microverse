@@ -41,7 +41,6 @@ label {
 }
 
 @keyframes slidein {
-
   0%,
   20%,
   50%,
@@ -117,9 +116,6 @@ header ul li:hover {
   display: block;
   float: right;
 }
-
-
-
 
 .mobile-item::after {
   content: '';
