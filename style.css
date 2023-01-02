@@ -120,18 +120,9 @@ header ul li:hover {
 
 
 .mobile-item a {
-  text-decoration:none;
+  text-decoration: none;
 }
 
-.mobile-item a {
-  display: block;
-  font-size: 32px;
-  line-height: 44px;
-  color: #fff5e1;
-  margin-top: 24px;
-  padding: 15px;
-  font-weight: 700;
-}
 
 .mobile-item::after {
   content: '';
