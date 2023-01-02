@@ -119,9 +119,6 @@ header ul li:hover {
 }
 
 
-.mobile-item a {
-  text-decoration: none;
-}
 
 
 .mobile-item::after {
