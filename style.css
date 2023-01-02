@@ -41,6 +41,7 @@ label {
 }
 
 @keyframes slidein {
+
   0%,
   20%,
   50%,
@@ -106,7 +107,7 @@ header ul li:hover {
   position: fixed;
   top: 0;
   left: 0;
-  padding: 24px;
+  padding: 25px;
   display: none;
 }
 
