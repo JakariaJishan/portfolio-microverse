@@ -119,9 +119,8 @@ header ul li:hover {
 }
 
 .mobile-item a {
-  text-decoration:none;
   display: block;
-  font-size: 32px;
+  font-size: 30px;
   line-height: 44px;
   color: #fff5e1;
   margin-top: 24px;
