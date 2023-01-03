@@ -7,7 +7,6 @@
 - [Prerequisite](#prerequisite)
 - [Usage](#usage)
 - [Setup](#setup)
-- [Run tests](#run-tests)
 - [Deployment](#triangular_flag_on_post-deployment)
 - [👥 Authors](#authors)
 - [😎 Key Features](#key-features)
@@ -16,14 +15,6 @@
 - [⭐️ Show your support](#support)
 - [🙏 Acknowledgements](#acknowledgements)
 - [📝 License](#license)
-
-# Portfolio
-
-> This is a simple replica of the template (https://www.figma.com/file/l7SqJ3ZfkAKih9sFxvWSR4/Microverse-Student-Project-1?node-id=48%3A27&t=9GufdfER8lvr1MpO-0) for portfolio setup.
-
-Live Link 👉 [portfolio](https://jakariajishan.github.io/portfolio-microverse/)
-
-project presentation 👉 [presentation video](https://www.loom.com/share/0cb6ef04dbd54013b13744e93993467f)
 
 ## Built With
 
@@ -48,10 +39,6 @@ code . ## To open code in VS Code
 
 -Clone the folder to your local machine.
 -Open the index.html file in your brower.
-
-### Run tests
-
-After pushing the changes on github, merge your pull request and let github action process changes.
 
 ### Deployment
 
