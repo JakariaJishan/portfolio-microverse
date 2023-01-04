@@ -221,6 +221,6 @@ form.addEventListener('submit', (e) => {
   if (!regex.test(email)) {
     formErrorMsg.innerHTML = 'error';
   } else {
-    formErrorMsg.innerHTML = 'success';
+    formErrorMsg.innerHTML = 'Congratulations! Your form submitted successfully.';
   }
 });
