@@ -228,11 +228,11 @@ form.addEventListener('submit', (e) => {
 form.addEventListener('keyup', () => {
   // preserve data to the local storage
 
-  const fullName = document.getElementById('full-name').value;
+  const name = document.getElementById('full-name').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
   const storage = {
-    fullName,
+    name,
     email,
     message,
   };
