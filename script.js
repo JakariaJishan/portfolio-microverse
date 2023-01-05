@@ -231,12 +231,12 @@ form.addEventListener('keyup', () => {
   const fullName = document.getElementById('full-name').value;
   const email = document.getElementById('email').value;
   const message = document.getElementById('message').value;
-  const dataStorage = {
+  const storage = {
     fullName,
     email,
     message,
   };
-  localStorage.setItem('data', JSON.stringify(dataStorage));
+  localStorage.setItem('data', JSON.stringify(storage));
 });
 const data = JSON.parse(localStorage.getItem('data'));
 const email = document.getElementById('email');
