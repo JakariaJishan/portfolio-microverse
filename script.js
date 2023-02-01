@@ -23,7 +23,7 @@ const workproject = {
   id: '_1',
   name: 'Multi-Post Stories',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-  featuredImg: './images/works.png',
+  featuredImg: './images/capstone-1.png',
   technologies: ['html', 'css', 'bootstrap', 'ruby'],
   liveLink: '#',
   sourceLink: '#',
@@ -66,28 +66,28 @@ const projectsArr = [
     id: '_1',
     name: 'Profesional Art Printing Data',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: 'images/works.png',
+    featuredImg: 'images/capstone-1.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://jakariajishan.github.io/Capstone-1',
+    sourceLink: 'https://github.com/JakariaJishan/Capstone-1',
   },
   {
     id: '_2',
     name: 'Profesional Art Printing Data2',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: 'images/projects-2.png',
+    featuredImg: 'images/awesome-book.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://jakariajishan.github.io/Awesome-book-es6/',
+    sourceLink: 'https://github.com/JakariaJishan/Awesome-book-es6',
   },
   {
     id: '_3',
     name: 'Keeping track of hundreds  of components website',
     desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-    featuredImg: 'images/works.png',
+    featuredImg: 'images/todo.png',
     technologies: ['html', 'bootstrap', 'ruby'],
-    liveLink: '#',
-    sourceLink: '#',
+    liveLink: 'https://jakariajishan.github.io/to-do-list/dist/',
+    sourceLink: 'https://github.com/JakariaJishan/to-do-list',
   },
   {
     id: '_4',
@@ -156,7 +156,7 @@ function getPopupId(id) {
       popupWindow.innerHTML += `<div class="popup-content">
           <div class="popup-header">
               <h2>${projectsArr[j].name}</h2>
-              <button class="cancle" id="cancle${projectsArr[j].id}"><img src="./images/Icon - Cancel.png" alt="cancle icon"></button>
+              <button class="cancle" id="cancle${projectsArr[j].id}"><img src="./images/icon - Cancel.png" alt="cancle icon"></button>
           </div>
           <ul>
               <li>
