@@ -219,8 +219,29 @@ form.addEventListener('submit', (e) => {
 
   const formErrorMsg = document.querySelector('.form-error-msg');
   if (!regex.test(email)) {
-    formErrorMsg.innerHTML = 'error';
+    formErrorMsg.innerHTML = 'error email form';
   } else {
-    formErrorMsg.innerHTML = 'success';
+    formErrorMsg.innerHTML = 'Congratulations! Your form submitted successfully.';
   }
 });
+
+form.addEventListener('keyup', () => {
+  // preserve data to the local storage
+
+  const name = document.getElementById('full-name').value;
+  const email = document.getElementById('email').value;
+  const message = document.getElementById('message').value;
+  const storage = {
+    name,
+    email,
+    message,
+  };
+  localStorage.setItem('data', JSON.stringify(storage));
+});
+const data = JSON.parse(localStorage.getItem('data'));
+const email = document.getElementById('email');
+email.value = data.email;
+const fullName = document.getElementById('full-name');
+fullName.value = data.fullName;
+const message = document.getElementById('message');
+message.value = data.message;
