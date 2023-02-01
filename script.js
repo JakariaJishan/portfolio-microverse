@@ -21,12 +21,12 @@ for (let i = 0; i < mobileItems.length; i += 1) {
 // projects-recent work
 const workproject = {
   id: '_1',
-  name: 'Multi-Post Stories',
+  name: 'Profesional Art Printing Data',
   desc: "A daily selection of privately personalized reads; no accounts or sign-ups required. has beentheindustry's standard",
-  featuredImg: './images/capstone-1.png',
-  technologies: ['html', 'css', 'bootstrap', 'ruby'],
-  liveLink: '#',
-  sourceLink: '#',
+  featuredImg: 'images/capstone-1.png',
+  technologies: ['html', 'bootstrap', 'ruby'],
+  liveLink: 'https://jakariajishan.github.io/Capstone-1',
+  sourceLink: 'https://github.com/JakariaJishan/Capstone-1',
 };
 const works = document.querySelector('.works');
 works.innerHTML += `<div class="recent-work">
